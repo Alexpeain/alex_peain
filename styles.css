@@ -6,6 +6,7 @@
     --decent: #f25f4c;
     --accent : #d4d8f0;
     --container-color: hsl(0,0%,100%);
+    --netural-dark :#07080f;
 
 }
 * {
@@ -71,7 +72,7 @@ section {
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
     flex-shrink: 0;
     margin-right: 2rem;
-    margin-left: 2rem;
+    margin-left: 6rem;
     
 }
 .welcome-image img {
@@ -87,15 +88,18 @@ section {
     min-width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
+    /* justify-content: center; 
+    align-items: center; */
+    text-align: left;
     color: #a7a9be;
     flex-grow: 1;
+    margin-left: 6rem;
+    margin-right: 10rem;
 }
   .welcome-text h5 {
     margin-top: 3rem;
     margin-bottom: 1rem; /* Add spacing between h5 and h1 */
+    font-size: 14px;
   }
   
   .welcome-text h1 {
@@ -104,9 +108,10 @@ section {
   .btn-group {
     margin-top: 1.5rem; /* Add spacing between p and btn-group */
   }
+
 .welcome-text h5 span{
     color: #78caeb;
-    font-size: 14px;
+    font-size: 16px;
 }
 .welcome-text h1 {
     color: #28a2c0;
@@ -115,9 +120,10 @@ section {
 .welcome-text p {
     color: #e5e5e5;
     display: flex;
-    text-align: left; /* Change text alignment to left */
+    /* text-align: left; Change text alignment to left */
     line-height: 1.6; /* Increase line height for better readability */
     margin-bottom: 1.5rem; 
+    margin-right: 10rem;
 }
 .btn-group{
     /* text-align: left; */
@@ -134,7 +140,12 @@ section {
     border: 2px solid #e5e5e5;
     box-shadow: 0 10px 10px -8px rgb(0, 0, 0);
     text-decoration: none;
+    transition: transform 0.2s ease-in;
 }
+.btn-group .btn:hover {
+    transform: translateY(10px);
+    box-shadow: 0 15px 20px rgba(143, 209, 247, 0.3);
+  }
 .btn.active {
     border-color: var(--accent) ;
 }
@@ -167,9 +178,9 @@ section {
     display: flex;
     place-items: center;
     margin-inline: 1.5rem;
-    /* padding-block: 5rem; */
-    /* background-color: var(--accent);
-    color: var(--netural); */
+    padding-block: 5rem;
+    background-color: var(--netural-dark);
+    color: var(--netural);
 }
  #projects .projects_container  h1 {
     border-bottom: 5px solid var(--neutral);
@@ -327,7 +338,7 @@ footer {
         width: 100%;
     }
     .welcome-text p{
-        font-size: 10px;
+        font-size: 15px;
         
     }
     
@@ -350,9 +361,12 @@ footer {
 
 }
 @media screen and (min-width:1120px){
-    .projects_container {
+    /* .projects_container {
         height: 100vh;
 
+    } */
+    .social-medias{
+        height: 10px;
     }
     .card_container{
         grid-template-columns: repeat(3, 1fr);
