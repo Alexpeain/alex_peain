@@ -93,8 +93,8 @@ section {
     text-align: left;
     color: #a7a9be;
     flex-grow: 1;
-    margin-left: 6rem;
-    margin-right: 10rem;
+    /* margin-left: 6rem;
+    margin-right: 10rem; */
 }
   .welcome-text h5 {
     margin-top: 3rem;
@@ -122,8 +122,7 @@ section {
     display: flex;
     /* text-align: left; Change text alignment to left */
     line-height: 1.6; /* Increase line height for better readability */
-    margin-bottom: 1.5rem; 
-    margin-right: 10rem;
+    
 }
 .btn-group{
     /* text-align: left; */
@@ -341,7 +340,10 @@ footer {
         font-size: 15px;
         
     }
-    
+    .welcome-text{
+        justify-content: center; 
+        align-items: center;
+    }
     .card_img {
         width: 200px;
         padding: 1rem;
@@ -377,6 +379,14 @@ footer {
     .card_data{
         width: 250px;
         padding-inline: 2.5rem;
+    }
+    .welcome-text{
+        margin-left: 6rem;
+        margin-right: 10rem;
+    }
+    .welcome-text p{
+    margin-bottom: 1.5rem; 
+    margin-right: 10rem;
     }
 }
 /* welcome container responsive design */
