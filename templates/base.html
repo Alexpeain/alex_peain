@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Peain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet"> 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="{% static 'portfolio/css/styles.css' %}">
+
+
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#welcome-section" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        <!-- Default content can go here -->
+        {% endblock %}
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+<script>
+
+    var typed=new Typed(".input",{
+            strings:["Backend Developer","Python Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+</script>
+    <footer>Created By Alex Peain Nov 2023</footer>
+</body>
+</html>
